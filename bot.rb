@@ -7,18 +7,22 @@ class WhatsAppBot < Sinatra::Base
   post '/bot' do
     body = params['Body'].downcase
     response = Twilio::TwiML::MessagingResponse.new
+
     response.message do |message|
       if body.include?('dog')
         message.body(Dog.fact)
         message.media(Dog.picture)
-      end
-
-      if body.include?('cat')
+      elsif body.include?('cat')
         message.body(Cat.fact)
         message.media(Cat.picture)
+      elsif body.include?('fox')
+        # message.body(Fox.fact)
+        message.media(Fox.picture)
+      elsif body.include?('hi') || body.include?('hello')
+        message.body('Hi! whant to talk about dogs or cats, ask me something')
+      else
+        message.body('I only know about dogs or cats, sorry!')
       end
-
-      message.body('I only know about dogs or cats, sorry!') unless body.include?('dog') || body.include?('cat')
     end
     content_type 'text/xml'
     response.to_xml
