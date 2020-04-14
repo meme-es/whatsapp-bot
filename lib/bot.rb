@@ -18,7 +18,7 @@ class WhatsAppBot < Sinatra::Base
         message.body(Cat.fact)
         message.media(Cat.picture)
       elsif body.match(/(hi!|hello|hello!)/)
-        message.body('Hi! whant to talk about dogs or cats, ask me something')
+        message.body('Hi! want to talk about dogs or cats, ask me something')
       else
         message.body('I only know about dogs or cats, sorry!')
         message.media(random.url)
