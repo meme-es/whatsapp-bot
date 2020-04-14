@@ -1,7 +1,9 @@
 require 'sinatra/base'
+require './lib/random'
 require './lib/animals'
 
 class WhatsAppBot < Sinatra::Base
+  random = Random.new
   use Rack::TwilioWebhookAuthentication, ENV['TWILIO_AUTH_TOKEN'], '/bot'
 
   post '/bot' do
@@ -15,13 +17,11 @@ class WhatsAppBot < Sinatra::Base
       elsif body.include?('cat')
         message.body(Cat.fact)
         message.media(Cat.picture)
-      elsif body.include?('fox')
-        # message.body(Fox.fact)
-        message.media(Fox.picture)
-      elsif body.include?('hi') || body.include?('hello')
+      elsif body.match(/(hi!|hello|hello!)/)
         message.body('Hi! whant to talk about dogs or cats, ask me something')
       else
         message.body('I only know about dogs or cats, sorry!')
+        message.media(random.url)
       end
     end
     content_type 'text/xml'

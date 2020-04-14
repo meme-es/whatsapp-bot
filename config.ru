@@ -3,5 +3,5 @@ Bundler.require
 
 Envyable.load('./config/env.yml')
 
-require './bot.rb'
+require './lib/bot.rb'
 run WhatsAppBot

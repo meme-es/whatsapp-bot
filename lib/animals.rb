@@ -21,15 +21,3 @@ module Cat
     JSON.parse(response.to_s).first['url']
   end
 end
-
-module Fox
-  # def self.fact
-  #   response = HTTP.get('https://randomfox.ca/floof/?ref=apilist.fun')
-  #   JSON.parse(response.to_s)['fact']
-  # end
-
-  def self.picture
-    response = HTTP.get('https://randomfox.ca/floof/?ref=apilist.fun')
-    JSON.parse(response.to_s)['image']
-  end
-end
