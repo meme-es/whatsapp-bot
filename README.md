@@ -39,8 +39,8 @@ Reply "stop" without quotes at any time when you want to stop interacting with t
 This project was built using three components:
 
 * This web project using Sinatra. [Sinatra](http://sinatrarb.com/) is a DSL for quickly creating web applications in Ruby.
-* [Twilio](www.twilio.com), an API that allows the web application to communicate with WhatsApp
-* [Heroku](www.heroku.com), is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud. Here is where I published this web application.
+* [Twilio](https://www.twilio.com/), an API that allows the web application to communicate with WhatsApp
+* [Heroku](https://www.heroku.com/), is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud. Here is where I published this web application.
 
 For Twilio and Heroku you must create an account for each to let manage your sandbox in Twilio and your projects in Heroku.
 
