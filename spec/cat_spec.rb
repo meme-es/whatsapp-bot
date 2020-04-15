@@ -1,25 +1,27 @@
 require 'http'
-require './lib/animals'
+require './lib/cat'
 
 RSpec.describe Cat do
-  describe '::picture' do
+  let(:cat) { Cat.new }
+
+  describe '#picture' do
     describe 'when the method is called' do
       it 'makes an HTTP request and returns a valid URL of an image of cats' do
-        expect(Cat.picture).to match(%r{^(https:\/\/)([\w_-]+(\.[\w_-]+)*\/)+([\w_-]+\.(jpg|gif|png))$})
+        expect(cat.picture).to match(%r{^(https:\/\/)([\w_-]+(\.[\w_-]+)*\/)+([\w_-]+\.(\w)+)$})
       end
     end
   end
 
-  describe '::fact' do
+  describe '#fact' do
     describe 'when the method is called' do
       it 'makes an HTTP request and returns a text describing a fact about cats' do
-        expect(Cat.fact).to match(/./)
+        expect(cat.fact).to match(/./)
       end
     end
 
     describe 'when the method is called' do
       it "makes an HTTP request and doesn't returns an empty text describing a fact about cats" do
-        expect(Cat.fact.empty?).not_to match(true)
+        expect(cat.fact.empty?).not_to match(true)
       end
     end
   end
