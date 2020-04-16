@@ -27,7 +27,7 @@ If you want to try the bot, follow the next steps:
 - Open WhatsApp.
 - Send "join zoo-rubbed" without quotes to start the communication.
 - Say "Hello!".
-- Keep sending messages asking about dogs, cats, foxes or owls.
+- Keep sending messages asking about dogs, cats, foxes and owls.
 
 ![chatting](./images/20200413-220734.png)
 
@@ -89,7 +89,21 @@ In your Twilio [Sandbox](https://www.twilio.com/console/sms/whatsapp/sandbox) us
 
 In your Twilio [Learn](https://www.twilio.com/console/sms/whatsapp/learn), you will see the number assigned to you to interact with WhatsApp using your cell phone and sending a code that you have to use to start the interaction.
 
-That's all, you can interact with you chatbot from you local machine.
+That's all, you can interact with this chatbot from your local machine.
+
+## Test Instructions
+
+To run all test cases, you must be in the root directory of the project and run:
+
+```
+$ rspec
+```
+
+If you want to execute a specific file, always in the root directory of the project, you must execute something like the next:
+
+```
+$ rspec ./spec/fox_spec.rb
+```
 
 ## Author
 
