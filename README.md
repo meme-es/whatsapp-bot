@@ -83,11 +83,11 @@ When you run ngrok you can see an URL, that is the output of your web applicatio
 
 ![ngrok](./images/ngrok.png)
 
-In your Twilio Sandbox use that to set the URL endpoint to receive messages in your web application, don't forget to add '/bot' at the end of your URL.
+In your Twilio [Sandbox](https://www.twilio.com/console/sms/whatsapp/sandbox) use that to set the URL endpoint to receive messages in your web application, don't forget to add '/bot' at the end of your URL.
 
 ![sandbox-twilio](./images/sandbox-twilio.png)
 
-In your Twilio [Sandbox](https://www.twilio.com/console/sms/whatsapp/learn), you will see the number assigned to you to interact with WhatsApp using your cell phone and sending a code that you have to use to start the interaction.
+In your Twilio [Learn](https://www.twilio.com/console/sms/whatsapp/learn), you will see the number assigned to you to interact with WhatsApp using your cell phone and sending a code that you have to use to start the interaction.
 
 That's all, you can interact with you chatbot from you local machine.
 
