@@ -1,6 +1,6 @@
 # WhatsApp Chatbot
 
-> This is the capstone project of the Ruby course in the Microverse program.
+> Web service using Sinatra, a framework of Ruby
 
 The project is about a chatbot through WhatsApp using Ruby.
 
