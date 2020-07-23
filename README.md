@@ -110,8 +110,6 @@ $ rspec ./spec/fox_spec.rb
 👤 **Manuel**
 
 - Github: [@meme-es](https://github.com/meme-es)
-- Twitter: [@meme_es](https://twitter.com/meme_es)
-- Linkedin: [linkedin](https://www.linkedin.com/in/manuel-elias-b289a638/)
 
 ## 🤝 Contributing
 
